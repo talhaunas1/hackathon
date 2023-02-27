@@ -34,7 +34,7 @@ const SignIn = () => {
         <Line />
         {/* <Welcome>Welcome to RealEstate.com</Welcome> */}
         <Input placeholder="Email "  onChange={(e)=>setEmail(e.target.value)} /> <br />
-        <Input placeholder="Password"  onChange={(e)=>setPassword(e.target.value)} />
+        <Input placeholder="Password"  type='password' onChange={(e)=>setPassword(e.target.value)} />
         <Info>
         <Keep> <input type={"checkbox"}/> Keep Me signed In</Keep>
         <Forgot>Forgot Password?</Forgot>
@@ -77,9 +77,12 @@ const Form = styled.div`
   border: 1px solid gray;
   border-radius: 4px;
   width: 50vw;
-  height: 80vh;
+  height: 63vh;
   padding: 20px;
   background-color: lightblue;
+  @media (max-width: 850px) {
+width:85vw;
+  }
 `;
 const Heading = styled.div`
   font-size: 20px;

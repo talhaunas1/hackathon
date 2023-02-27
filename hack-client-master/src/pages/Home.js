@@ -70,7 +70,12 @@ const BGImage = styled.div`
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   margin-bottom: 10vh;
+  @media (max-width: 850px) {
+    width:fit-content;
+  }
 `;
+
+
 
 const Content = styled.div`
   flex-direction: column;
@@ -87,44 +92,44 @@ const Heading = styled.div`
   word-spacing: 2px;
 `;
 
-const Sections = styled.div`
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.38);
-  border-radius: 5px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.9px);
-  -webkit-backdrop-filter: blur(8.9px);
-  border: 1px solid rgba(255, 255, 255, 0.33);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* gap: 10px; */
-  width: 20vw;
-  height: 6vh;
-  margin-top: 25px;
-  margin-bottom: 17px;
-`;
+// const Sections = styled.div`
+//   /* From https://css.glass */
+//   background: rgba(255, 255, 255, 0.38);
+//   border-radius: 5px;
+//   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+//   backdrop-filter: blur(8.9px);
+//   -webkit-backdrop-filter: blur(8.9px);
+//   border: 1px solid rgba(255, 255, 255, 0.33);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   /* gap: 10px; */
+//   width: 20vw;
+//   height: 6vh;
+//   margin-top: 25px;
+//   margin-bottom: 17px;
+// `;
 
-const Section = styled.div`
-  cursor: pointer;
-  color: white;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-  :hover {
-    background-color: white;
-    color: grey;
-  }
-`;
+// const Section = styled.div`
+//   cursor: pointer;
+//   color: white;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 5px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transition: all 0.3s ease-in-out;
+//   :hover {
+//     background-color: white;
+//     color: grey;
+//   }
+// `;
 
 const SearchBar = styled.div`
   margin-top: 15px;
   display: flex;
-  width: 60vw;
+  width: 60%;
   height: 12vh;
   background-color: white;
   border-radius: 3px;
@@ -182,7 +187,7 @@ const Button = styled.div`
   background-color: black;
   padding: 10px 15px;
   border-radius: 5px;
-  width: 10vw;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,6 +214,10 @@ const CTA = styled.div`
   flex-direction: column;
   justify-content: center;
   padding-left: 4vw;
+  @media (max-width: 850px) {
+    width:max-content;
+    margin-left:10%;
+  }
 `;
 
 const CTAHeading = styled.div`

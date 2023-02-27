@@ -91,6 +91,9 @@ const Form = styled.div`
   padding: 10px;
   background-color: white;
   border-radius: 5px;
+  @media (max-width: 850px) {
+    width:90vw;
+  }
 `;
 
 const Heading = styled.div`

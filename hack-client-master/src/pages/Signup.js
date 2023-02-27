@@ -128,6 +128,7 @@ const Button = styled.div`
     justify-content: center;
     font-weight: bold;
     margin: 10px 0px;
+    cursor:pointer;
 `;
 
 

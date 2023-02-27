@@ -82,6 +82,9 @@ const Container = styled.div`
   flex-direction: column;
   align-items: space-between;
   margin: 0px 7vw;
+  @media (max-width: 850px) {
+    width:750px;
+  }
 `;
 const Heading = styled.div`
   font-size: 20px;

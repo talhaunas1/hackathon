@@ -25,7 +25,7 @@ const Signup = () => {
             // }
             // console.log('running');
             const response = await axios.post('/auth/signup', { userName, email, password })
-            navigate('/login');
+            navigate('/');
         } catch (error) {
             console.log(error);
         }
@@ -53,7 +53,7 @@ const Signup = () => {
                 </Or>
                 <ExtraInfo>
                     <Dont>Already have an account?</Dont>
-                    <Link to="/login" style={{ color: "inherit" }}>
+                    <Link to="/" style={{ color: "inherit" }}>
                         <Create>Login</Create>
                     </Link>
                 </ExtraInfo>

@@ -21,10 +21,10 @@ const Navbar = () => {
             Add Property
           </Button>
         </Link>
-        <Link to="login" style={{ color: "inherit" }}>
+        <Link to="/" style={{ color: "inherit" }}>
           <SignIn>
             <PersonIcon />
-            <ArrowDropDownIcon />
+            Logout
           </SignIn>
         </Link>
       </Buttons>

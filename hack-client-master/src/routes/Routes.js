@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes as Router, Route } from "react-router-dom";
+import { BrowserRouter, Routes as Router, Route, Outlet,  } from "react-router-dom";
 import AddPost from "../pages/AddPost";
 import Home from "../pages/Home";
 import SignIn from "../pages/SignIn";
@@ -10,8 +10,8 @@ const Routes = () => {
     <BrowserRouter>
       <Router>
         <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="login" element={<SignIn />} />
+          <Route index  element={<SignIn />} />
+          <Route path='/home' element={<Home />} />
           <Route path="signup" element={<Signup />} />
           <Route path="add" element={<AddPost />} />
         </Route>

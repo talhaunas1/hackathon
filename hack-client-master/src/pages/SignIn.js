@@ -19,7 +19,7 @@ const SignIn = () => {
       console.log('running');
       const response = await axios.post('/auth/signin', { email, password });
       localStorage.setItem('token', response.data.token)
-      navigate('/')
+      navigate('/home')
 
     } catch (error) {
       console.log(error);
